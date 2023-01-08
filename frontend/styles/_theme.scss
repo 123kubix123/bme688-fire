@@ -1,0 +1,162 @@
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the base styles for Angular Material core. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$bik-primary: (
+    50 : #ffeee0,
+    100 : #ffd4b3,
+    200 : #ffb880,
+    300 : #ff9b4d,
+    400 : #ff8526,
+    500 : #ff7000,
+    600 : #ff6800,
+    700 : #ff5d00,
+    800 : #ff5300,
+    900 : #ff4100,
+    A100 : #ffffff,
+    A200 : #fff5f2,
+    A400 : #ffccbf,
+    A700 : #ffb7a6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$bik-accent: (
+    50: #fef4e7,
+    100: #fce3c3,
+    200: #fad09b,
+    300: #f7bd73,
+    400: #f6af55,
+    500: #f4a137,
+    600: #f39931,
+    700: #f18f2a,
+    800: #ef8523,
+    900: #ec7416,
+    A100: #ffffff,
+    A200: #fff2e9,
+    A400: #ffd4b6,
+    A700: #ffc49c,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #000000,
+        500: #000000,
+        600: #000000,
+        700: #000000,
+        800: #000000,
+        900: #000000,
+        A100: #000000,
+        A200: #000000,
+        A400: #000000,
+        A700: #000000,
+    ),
+);
+
+$fxhub-accent: (
+    50: #fff9e0,
+    100: #ffefb3,
+    200: #ffe580,
+    300: #ffdb4d,
+    400: #ffd326,
+    500: #ffcb00,
+    600: #ffc600,
+    700: #ffbe00,
+    800: #ffb800,
+    900: #ffac00,
+    A100: #ffffff,
+    A200: #fffaf2,
+    A400: #ffe8bf,
+    A700: #ffdea6,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #000000,
+        500: #000000,
+        600: #000000,
+        700: #000000,
+        800: #000000,
+        900: #000000,
+        A100: #000000,
+        A200: #000000,
+        A400: #000000,
+        A700: #000000,
+    ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$bik-warn: (
+    50: #fee8e7,
+    100: #fcc7c3,
+    200: #faa19b,
+    300: #f77b72,
+    400: #f65f54,
+    500: #f44336,
+    600: #f33d30,
+    700: #f13429,
+    800: #ef2c22,
+    900: #ec1e16,
+    A100: #ffffff,
+    A200: #ffe9e9,
+    A400: #ffb8b6,
+    A700: #ff9f9c,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #000000,
+        500: #ffffff,
+        600: #ffffff,
+        700: #ffffff,
+        800: #ffffff,
+        900: #ffffff,
+        A100: #000000,
+        A200: #000000,
+        A400: #000000,
+        A700: #000000,
+    ),
+);
+
+$primary: mat-palette($bik-primary);
+$success: mat-palette($bik-primary, 700);
+$accent: mat-palette($bik-accent);
+
+// The  palette .
+$warn: mat-palette($bik-warn, 700);
+$warn-foreground: mat-color($bik-warn, 50);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$theme: mat-light-theme($primary, $accent, $warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($theme);
+
+.mat-sidenav-content {
+    background-color: #efefef;
+}

@@ -1,0 +1,35 @@
+@import "_variables.scss";
+
+snack-bar-container {
+    &.success {
+        background-color: mat-color($success);
+        border-color: mat-color($success);
+        color: mat-color($success, 50);
+    }
+
+    &.warn {
+        background-color: mat-color($warn);
+        border-color: mat-color($warn);
+        color: mat-color($warn, 50);
+    }
+}
+
+.alert {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    box-shadow: $card-box-shadow;
+    border-radius: 2px;
+
+    &.alert-success {
+        background-color: mat-color($success);
+        border-color: mat-color($success);
+        color: mat-color($success, 50);
+    }
+    &.alert-error,
+    &.alert-danger,
+    &.alert-warn {
+        background-color: mat-color($warn);
+        border-color: mat-color($warn);
+        color: mat-color($warn, 50);
+    }
+}

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import 'styles/_bootstrap-overrides';
+@import 'styles/_navigation';
+@import 'styles/_alert';
+@import 'styles/_mat-toolbar';
+@import 'styles/_mat-card';
+@import 'styles/_general-styles';
+
+body {
+    margin: 0;
+}
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+md-icon {
+    font-family: 'Material Icons' !important;
+}
+
+.mat-checkbox.mat-accent {
+    .mat-checkbox-inner-container {
+        margin: 5px 8px auto 0;
+    }
+}
+
+.mat-expansion-panel-body {
+    padding: 0 0 8px !important;
+}
+
+@media (max-width: 500px) {
+    .mat-stepper-horizontal .mat-horizontal-stepper-header {
+        padding: 0 8px;
+    }
+
+    .mat-stepper-horizontal .mat-stepper-horizontal-line {
+        padding: 0 8px;
+    }
+
+    .mat-horizontal-content-container {
+        padding: 0 8px !important;
+    }
+}

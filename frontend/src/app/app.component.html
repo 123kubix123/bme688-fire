@@ -1,0 +1,83 @@
+<mat-toolbar color="primary">
+  <div class="toolbar-apptitle"> Monitorowanie danych z czujnika BME688</div>
+</mat-toolbar>
+
+<div class="card bg-light mb-3 payment-info mat-elevation-z4">
+  <div class="card-header text-center">
+    <strong>
+      Stan
+    </strong>
+  </div>
+  <div class="card-body row">
+    <p class="card-text text-center" [style.color]="getColor(fire_detected)">
+      <strong>{{ fire_detected ? 'Wykryto pożar!' : 'Brak pożaru' }}</strong>
+    </p>
+  </div>
+</div>
+
+<div class="card bg-light mb-3 payment-info mat-elevation-z4">
+  <div class="card-header text-center">
+    <strong>
+      Temperatura
+    </strong>
+  </div>
+  <div class="card-body row">
+    <p class="card-text text-center">
+      <strong>{{ temperature }} &#8451;</strong>
+    </p>
+  </div>
+</div>
+
+<div class="card bg-light mb-3 payment-info mat-elevation-z4">
+  <div class="card-header text-center">
+    <strong>
+      Ciśnienie
+    </strong>
+  </div>
+  <div class="card-body row">
+    <p class="card-text text-center">
+      <strong>{{ pressure }} hPa</strong>
+    </p>
+  </div>
+</div>
+
+<div class="card bg-light mb-3 payment-info mat-elevation-z4">
+  <div class="card-header text-center">
+    <strong>
+      Wilgotność
+    </strong>
+  </div>
+  <div class="card-body row">
+    <p class="card-text text-center">
+      <strong>{{ humidity }} %</strong>
+    </p>
+  </div>
+</div>
+
+<div class="card bg-light mb-3 payment-info mat-elevation-z4">
+  <div class="card-header text-center">
+    <strong>
+      Rezystancja powietrza
+    </strong>
+  </div>
+  <div class="card-body row">
+    <p class="card-text text-center">
+      <strong>{{ gas_resistance }} &#x2126;</strong>
+    </p>
+  </div>
+</div>
+
+<div class="card bg-light mb-3 payment-info mat-elevation-z4">
+  <div class="card-header text-center">
+    <strong>
+      Jakość powietrza
+    </strong>
+  </div>
+  <div class="card-body row">
+    <p class="card-text text-center">
+      <strong>{{ air_quality }} IAQ</strong>
+    </p>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

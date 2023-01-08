@@ -1,0 +1,10 @@
+@import "./_theme";
+
+mat-toolbar {
+    padding: 0 !important;
+    background-color: mat-color($primary) !important;
+    color: white !important;
+    mat-toolbar-row {
+        padding: 0 16px;
+    }
+}

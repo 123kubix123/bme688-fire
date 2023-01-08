@@ -1,0 +1,81 @@
+.expand {
+    width: 100% !important;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+mat-card-title {
+    width: 100%;
+}
+
+// Select option
+select,
+.form-control select {
+    -webkit-appearance: menulist !important;
+    -moz-appearance: none; //color: $text-color !important;
+}
+
+select[disabled] {
+    background-color: lighten(lightgray, 10%);
+}
+
+// Cards
+.card {
+    margin: 1rem; //box-shadow: $card-box-shadow;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+// Table
+table {
+    min-height: 5rem;
+    margin: 0.5rem 0;
+    tbody > tr > td {
+        vertical-align: middle;
+    }
+    td,
+    th {
+        border-top: none;
+    }
+}
+
+thead {
+    border-bottom: 2px solid #000;
+}
+
+app-editable-row,
+app-editable-pips-row {
+    height: 49px !important;
+}
+
+tr.clickable-row {
+    cursor: pointer;
+}
+
+tr.selected {
+    background-color: #e9e9e9 !important;
+}
+
+.currency {
+    text-align: right;
+}
+
+select[disabled] {
+    color: #555 !important;
+}
+
+.text-center {
+    text-align: center;
+}

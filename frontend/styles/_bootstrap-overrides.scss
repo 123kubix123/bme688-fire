@@ -1,0 +1,23 @@
+@import "~@angular/material/theming";
+@import "_variables.scss";
+
+$gray-dark: #373a3c;
+$gray: #55595c;
+$gray-light: #818a91;
+$gray-lighter: #eceeef;
+$gray-lightest: #f7f7f9;
+
+$brand-primary: mat-color($primary);
+$brand-success: mat-color($success);
+$brand-info: #9e9e9e;
+$brand-warning: mat-color($accent);
+$brand-danger: mat-color($warn);
+$brand-inverse: $gray-dark;
+
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
+$enable-hover-media-query: true;
+
+$body-bg: #efefef;
+$body-color: $gray-dark;

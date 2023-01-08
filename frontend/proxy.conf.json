@@ -1,0 +1,8 @@
+{
+    "/API": {
+        "target": "https://sirserver.dynovski.xyz",
+        "secure": true,
+        "logLevel": "debug",
+        "timeout": 600000
+    }
+}

@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+.toolbar-apptitle {
+	width: 100%;
+	text-align: center;
+}
+
+.payment-info {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+    font-size: large;
+    width: 250px;
+}
