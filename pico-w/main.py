@@ -45,10 +45,10 @@ while True:
     socketObject = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
     payload = json.dumps(data)
-    request = "POST /update_data HTTP/1.1\r\nHost: sirserver.dynovski.xyz\r\nContent-Length:"+str(len(payload))+" \r\nContent-Type: application/json \r\n\r\n"+payload+"\r\n\r\n"
+    request = "POST /update_data HTTP/1.1\r\nHost: raspberry\r\nContent-Length:"+str(len(payload))+" \r\nContent-Type: application/json \r\n\r\n"+payload+"\r\n\r\n"
     print(request)
 
-    address = ("192.168.1.64", 16000)
+    address = ("192.168.1.64", 80)
     socketObject.connect(address)
     bytessent = socketObject.send(request)
     socketObject.close()
