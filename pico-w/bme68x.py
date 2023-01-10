@@ -20,7 +20,7 @@ class BME68X:
         # You will usually have to add an offset to account for the temperature of
         # the sensor. This is usually around 5 degrees but varies by use. Use a
         # separate temperature sensor to calibrate this one.
-        self.temperature_offset = 0
+        self.temperature_offset = -2
         self.data = {}
         
     def read_data(self):
